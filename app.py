@@ -9,13 +9,6 @@ st.header("_Streamlit_ is :blue[cool] :sunglasses:", divider="gray")
 
 st.subheader("_Streamlit_ is :blue[cool] :sunglasses:")
 
-st.markdown("*Streamlit* is **really** ***cool***.")
-import streamlit as st
-import pandas as pd
-import numpy as np
-
-df = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
-    columns=["lat", "lon"],
-)
-st.map(df)
+with st.chat_message("user"):
+    st.write("hlo dunia raya yg mngkin skrg lg bersantai ria menikmati weekend, ak sedang terbantai")
+    st.line_chart(np.random.randn(30, 3))
